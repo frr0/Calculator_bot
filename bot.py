@@ -1,6 +1,5 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
-<<<<<<< HEAD
 import datetime
 
 def hello(update: Update, context: CallbackContext) -> None:
@@ -14,10 +13,6 @@ def solve(update, context) -> None:
 def date(update, context):
     update.message.reply_text(str(datetime.datetime.now()))
     #  update.message.reply_text("e che ne so che data è")
-
-def hello(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text(f'Hello {update.effective_user.first_name}')
-    print(1)
 
 updater = Updater('Token')
 
